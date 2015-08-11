@@ -1,0 +1,70 @@
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+
+/*___________WRAP____________*/
+.wrapper {
+	width: 1000px;
+	margin: auto;
+}
+.main--sidebar {
+	width: 230px;
+	float: left;
+}
+.contaner {
+	width: 740px;
+	height: 1000px;
+	background-color: red;
+	float: right;
+}
+.main--header__box--for--logo {
+	width: 200px;
+	margin: auto;
+}
+.logo--for--header {
+	vertical-align:bottom
+}
+.main--sidebar__section {
+	background-color: #f4f6f9;
+	margin-bottom: 15px;
+	color: rgb(92, 123, 152);
+	padding: 7px 13px;
+}
+.callback--form__header{
+	text-align: center;
+}
+#nameForCallback, #telefonForCallback{
+	display: inline-block;
+	width: 136px;
+  	height: 28px;
+	border-style: solid;
+  	border-width: 1px;
+  	border-color: rgb(218, 225, 235);
+  	background-color: rgb(255, 255, 255);
+  	float: right;
+}
+.callback--form__wrap__section {
+	margin-bottom: 15px;
+
+}
+.callback--form__wrap__section__label {
+	float: left;
+	vertical-align: bottom;
+	font-size: 14px;
+	font-weight: 200
+}
+.callback--form__header__string {
+	font-size: 25px;
+  	font-family: "Elektra Light Pro";
+  	color: rgb(92, 123, 152);
+  	font-weight: bold;
+}

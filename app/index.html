@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Главная страница</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content="Интернет магазин Apple"/>
+    <meta name="author" content="Набиев Рустам"/>
+    <!--CSS-->
+    <link rel="stylesheet" href="bower/normalize.css/normalize.css"/>
+    <link rel="stylesheet" href="fonts/stylesheet.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <!--JS-->
+    <script type="application/javascript" src="bower/modernizer/modernizr.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside class="main--sidebar">
+        <section class="main--sidebar__section">
+          <div class="main--header">
+            <div class="main--header__box--for--logo"><img src="img/logo/logo_Shop.png" alt="Логотип" class="logo--for--header"/></div>
+          </div>
+        </section>
+        <section class="main--sidebar__section">
+          <form class="callback--form">
+            <header class="callback--form__header">
+              <h2 class="callback--form__header__string">Заказать звонок</h2>
+            </header>
+            <div class="callback--form__wrap">
+              <section class="callback--form__wrap__section clearfix">
+                <label for="name" class="callback--form__wrap__section__label">Ваше имя</label>
+                <input type="text" name="name" placeholder="Константин" id="nameForCallback" class="callback--form__wrap__section__input"/>
+              </section>
+              <section class="callback--form__wrap__section clearfix">
+                <label for="tel" class="callback--form__wrap__section__label">Телефон</label>
+                <input type="tel" name="tel" placeholder="+7 (912) 000-00-00" id="telefonForCallback" class="callback--form__wrap__section__input"/>
+              </section>
+              <section class="callback--form__wrap__section clearfix">
+                <label for="date" class="callback--form__wrap__section__label">Дата звонка</label>
+                <input type="text" name="date" placeholder="" class="callback--form__wrap__section__input"/>
+                <input type="text" name="date" placeholder="" class="callback--form__wrap__section__input"/>
+              </section>
+              <section class="callback--form__wrap__section clearfix">
+                <textarea name="comment" placeholder="Комментарий" class="callback--form__wrap__section__textarea"></textarea>
+              </section>
+              <section class="callback--form__wrap__section clearfix">
+                <button type="submit" class="callback--form__wrap__section__button">Отправить</button>
+                <button type="reset" class="callback--form__wrap__section__button">Очистить</button>
+              </section>
+            </div>
+          </form>
+        </section>
+        <section class="main--sidebar__section">
+          <div class="gallery">
+            <div class="box--for--picture"><img src="" alt="Природа"/></div>
+            <div class="box--for--picture"><img src="" alt="Природа"/></div>
+            <div class="box--for--picture"><img src="" alt="Природа"/></div>
+            <div class="box--for--picture"><img src="" alt="Природа"/></div>
+            <div class="box--for--picture"><img src="" alt="Природа"/></div>
+            <div class="box--for--picture"><img src="" alt="Природа"/></div>
+          </div>
+        </section>
+        <section class="main--sidebar__section">
+          <ul class="coordinates">
+            <li class="coordinates__list">
+              <div class="coordinates__list_box--icon"></div><a href="#">г.Москва, ул.Новая 246, офис 214</a>
+            </li>
+            <li class="coordinates__list">
+              <div class="coordinates__list_box--icon"></div><a href="tel:+79213221232">+7(921) 322-12-32</a>
+            </li>
+          </ul>
+        </section>
+      </aside>
+      <main class="contaner"></main>
+    </div>
+    <!-- Главный футер-->
+    <footer class="main--footer">
+      <section class="main--footer__section">
+        <div class="main--footer__section__logo"><img src="img/logo/logo_copy.png" alt="Логотип"/></div>
+      </section>
+      <section class="main--footer__section">
+        <div class="main--footer__footer--menu">
+          <section class="main--footer__footer--menu__section">
+            <header class="main--footer__footer--menu__section__header">
+              <h3 class="main--footer__footer--menu__section__header__string">О магазине</h3>
+            </header>
+            <ul class="main--footer__footer--menu__section__list__wrap">
+              <li class="main--footer__footer--menu__section__list"><a href="#" class="footer--menu__section__list__link">О нас</a></li>
+              <li class="main--footer__footer--menu__section__list"><a href="#" class="footer--menu__section__list__link">Наши цены</a></li>
+              <li class="main--footer__footer--menu__section__list"><a href="#" class="footer--menu__section__list__link">Наши скидки</a></li>
+              <li class="main--footer__footer--menu__section__list"><a href="#" class="footer--menu__section__list__link">Акции</a></li>
+            </ul>
+          </section>
+          <section class="main--footer__footer--menu__section">
+            <header class="main--footer__footer--menu__section__header">
+              <h3 class="main--footer__footer--menu__section__header__string">Каталог</h3>
+            </header>
+            <ul class="main--footer__footer--menu__section__list__wrap">
+              <li class="main--footer__footer--menu__section__list"><a href="#" class="footer--menu__section__list__link">Смартфоны</a></li>
+              <li class="main--footer__footer--menu__section__list"><a href="#" class="footer--menu__section__list__link">Планшеты</a></li>
+              <li class="main--footer__footer--menu__section__list"><a href="#" class="footer--menu__section__list__link">Компьютеры</a></li>
+              <li class="main--footer__footer--menu__section__list"><a href="#" class="footer--menu__section__list__link">Аксессуары</a></li>
+            </ul>
+          </section>
+          <section class="main--footer__section">
+            <header class="main--footer__footer--menu__section__header">
+              <h3 class="main--footer__footer--menu__section__header__string">Контакты</h3>
+            </header>
+            <ul class="main--footer__footer--menu__section__list__wrap">
+              <li class="main--footer__footer--menu__section__list"><a href="#" class="footer--menu__section__list__link">Телефоны</a></li>
+              <li class="main--footer__footer--menu__section__list"><a href="#" class="footer--menu__section__list__link">Адреса</a></li>
+              <li class="main--footer__footer--menu__section__list"><a href="#" class="footer--menu__section__list__link">Карта проезда</a></li>
+              <li class="main--footer__footer--menu__section__list"><a href="#" class="footer--menu__section__list__link">Обратная связь</a></li>
+            </ul>
+          </section>
+        </div>
+      </section>
+      <section class="main--footer__section">
+        <div class="other--services">
+          <ul class="other--services__store">
+            <li class="other--services__store__list"><a href="#" class="other--services__store__list__link">App Store</a></li>
+            <li class="other--services__store__list"><a href="#" class="other--services__store__list__link">Google Store</a></li>
+          </ul>
+          <ul class="other--services__social">
+            <li class="other--services__social__list"><a href="#" class="other--services__social__list__link">ВКонтакте</a></li>
+            <li class="other--services__social__list"><a href="#" class="other--services__social__list__link">Facebook</a></li>
+            <li class="other--services__social__list"><a href="#" class="other--services__social__list__link">Twitter</a></li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
