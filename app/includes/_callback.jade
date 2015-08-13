@@ -1,0 +1,19 @@
+form.callback-form
+  header.callback-form__header
+    h2.callback-form__header__string Заказать звонок
+  div.callback-form__wrap
+    section.callback-form__wrap__section.clearfix
+      label(for="name" class="callback-form__wrap__section__label") Ваше имя
+      input(type="text" name="name" placeholder="Константин" class="callback-form__wrap__section__input" id="nameForCallback")
+    section.callback-form__wrap__section.clearfix
+      label(for="tel" class="callback-form__wrap__section__label") Телефон
+      input(type="tel" name="tel" placeholder="+7 (912) 000-00-00" class="callback-form__wrap__section__input" id="telefonForCallback")
+    section.callback-form__wrap__section.clearfix
+      label(for="date" class="callback-form__wrap__section__label") Дата звонка
+      input(type="text" name="date" placeholder="" class="callback-form__wrap__section__input" id="inputForDay")
+      input(type="text" name="date" placeholder="" class="callback-form__wrap__section__input" id="inputForMonth")
+    section.callback-form__wrap__section.clearfix
+      textarea(name="comment" class="callback-form__wrap__section__textarea" placeholder="Комментарий")
+    section.callback-form__wrap__section.clearfix
+      button(type="submit" class="callback-form__wrap__section__button" id="buttonSubmit") Отправить
+      button(type="reset" class="callback-form__wrap__section__button" id="buttonReset") Очистить

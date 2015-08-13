@@ -1,0 +1,29 @@
+body {
+  font-family: "elektra_light_proregular";
+  font-size: 14px;
+  line-height: 1.429;
+}
+.main-sidebar {
+  width: 230px;
+  float: left;
+  padding-top: 35px;
+}
+.main-sidebar__section {
+  margin-bottom: 15px;
+  color: rgb(92, 123, 152);
+}
+.contaner {
+  width: 740px;
+  height: 1000px;
+  background-color: red;
+  float: right;
+}
+h2 {
+  font-family: "elektra_light_probold";
+  font-size: 25px;
+  line-height: 0.8;
+}
+.wrapper {
+  width: 1000px;
+  margin: auto;
+}

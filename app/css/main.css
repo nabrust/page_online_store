@@ -1,70 +1,181 @@
+/* line 1, ../sass/_pattern.scss */
+body {
+  font-family: "elektra_light_proregular";
+  font-size: 14px;
+  line-height: 1.429;
+}
+
+/* line 6, ../sass/_pattern.scss */
+.main-sidebar {
+  width: 230px;
+  float: left;
+  padding-top: 35px;
+}
+
+/* line 11, ../sass/_pattern.scss */
+.main-sidebar__section {
+  margin-bottom: 15px;
+  color: #5c7b98;
+}
+
+/* line 15, ../sass/_pattern.scss */
+.contaner {
+  width: 740px;
+  height: 1000px;
+  background-color: red;
+  float: right;
+}
+
+/* line 21, ../sass/_pattern.scss */
+h2 {
+  font-family: "elektra_light_probold";
+  font-size: 25px;
+  line-height: 0.8;
+}
+
+/* line 26, ../sass/_pattern.scss */
+.wrapper {
+  width: 1000px;
+  margin: auto;
+}
+
+/* line 3, ../sass/_logo-header.scss */
+.logo-for-header {
+  vertical-align: bottom;
+}
+
+/* line 6, ../sass/_logo-header.scss */
+.main-header__box-for-logo {
+  width: 200px;
+  margin: auto;
+}
+
+/* line 10, ../sass/_logo-header.scss */
+.section-logo {
+  background-color: white;
+}
+
+/* line 1, ../sass/_callback.scss */
+.callback-form__wrap__section__input, .callback-form__wrap__section__textarea {
+  font-size: 12px;
+  line-height: 1.667;
+  padding: 7px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dae1eb;
+  background-color: white;
+}
+
+/* line 13, ../sass/_callback.scss */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  font-size: 12px;
+  line-height: 1.667;
+  color: #dae1eb;
+  font-family: "elektra_light_proregular";
+}
+
+/* line 19, ../sass/_callback.scss */
+.callback-form__wrap__section__textarea {
+  min-width: 204px;
+  max-width: 204px;
+  min-height: 71px;
+  max-height: 71px;
+}
+
+/* line 25, ../sass/_callback.scss */
+.callback-form {
+  background-color: #f4f6f9;
+  padding: 7px 13px;
+}
+
+/* line 29, ../sass/_callback.scss */
+.callback-form__header {
+  text-align: center;
+}
+
+/* line 32, ../sass/_callback.scss */
+#nameForCallback, #telefonForCallback {
+  display: inline-block;
+  width: 136px;
+  height: 28px;
+  float: right;
+}
+
+/* line 38, ../sass/_callback.scss */
+.callback-form__wrap__section {
+  margin-bottom: 15px;
+}
+
+/* line 41, ../sass/_callback.scss */
+.callback-form__wrap__section__label {
+  float: left;
+  max-height: 28px;
+  padding: 3px 0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* line 49, ../sass/_callback.scss */
+#inputForDay, #inputForMonth {
+  width: 50px;
+  height: 25px;
+  float: right;
+  margin-left: 9px;
+}
+
+/* line 55, ../sass/_callback.scss */
+.callback-form__wrap__section__button {
+  width: 90px;
+  height: 35px;
+  font-size: 15px;
+  font-family: "elektra_light_probold";
+  color: white;
+  border: none;
+}
+
+/* line 63, ../sass/_callback.scss */
+#buttonSubmit {
+  background-color: #00b9fe;
+  float: left;
+}
+
+/* line 68, ../sass/_callback.scss */
+#buttonReset {
+  background-color: #dae1eb;
+  float: right;
+}
+
+/* line 1, ../sass/_gallery-images.scss */
+.box-for-picture {
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin-left: 10px;
+}
+
+/* line 7, ../sass/_gallery-images.scss */
+.gallery {
+  margin-left: -13px;
+  margin-right: -13px;
+}
+
+/* line 1, ../sass/_clearfix.scss */
 .clearfix:before,
 .clearfix:after {
-	content: " ";
-	display: table;
+  content: " ";
+  display: table;
 }
+
+/* line 6, ../sass/_clearfix.scss */
 .clearfix:after {
-	clear: both;
+  clear: both;
 }
+
+/* line 9, ../sass/_clearfix.scss */
 .clearfix {
-	*zoom: 1;
-}
-
-
-/*___________WRAP____________*/
-.wrapper {
-	width: 1000px;
-	margin: auto;
-}
-.main--sidebar {
-	width: 230px;
-	float: left;
-}
-.contaner {
-	width: 740px;
-	height: 1000px;
-	background-color: red;
-	float: right;
-}
-.main--header__box--for--logo {
-	width: 200px;
-	margin: auto;
-}
-.logo--for--header {
-	vertical-align:bottom
-}
-.main--sidebar__section {
-	background-color: #f4f6f9;
-	margin-bottom: 15px;
-	color: rgb(92, 123, 152);
-	padding: 7px 13px;
-}
-.callback--form__header{
-	text-align: center;
-}
-#nameForCallback, #telefonForCallback{
-	display: inline-block;
-	width: 136px;
-  	height: 28px;
-	border-style: solid;
-  	border-width: 1px;
-  	border-color: rgb(218, 225, 235);
-  	background-color: rgb(255, 255, 255);
-  	float: right;
-}
-.callback--form__wrap__section {
-	margin-bottom: 15px;
-
-}
-.callback--form__wrap__section__label {
-	float: left;
-	vertical-align: bottom;
-	font-size: 14px;
-	font-weight: 200
-}
-.callback--form__header__string {
-	font-size: 25px;
-  	font-family: "Elektra Light Pro";
-  	color: rgb(92, 123, 152);
-  	font-weight: bold;
+  *zoom: 1;
 }

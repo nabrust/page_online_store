@@ -1,50 +1,11 @@
 div.wrapper
-	aside.main--sidebar
-		section.main--sidebar__section
-				div.main--header
-					div.main--header__box--for--logo
-						img(src="img/logo/logo_Shop.png" alt="Логотип" class="logo--for--header")
-		section.main--sidebar__section
-				form.callback--form
-					header.callback--form__header
-						h2.callback--form__header__string Заказать звонок
-					div.callback--form__wrap
-						section.callback--form__wrap__section.clearfix
-							label(for="name" class="callback--form__wrap__section__label") Ваше имя
-							input(type="text" name="name" placeholder="Константин" class="callback--form__wrap__section__input" id="nameForCallback")
-						section.callback--form__wrap__section.clearfix
-							label(for="tel" class="callback--form__wrap__section__label") Телефон
-							input(type="tel" name="tel" placeholder="+7 (912) 000-00-00" class="callback--form__wrap__section__input" id="telefonForCallback")
-						section.callback--form__wrap__section.clearfix
-							label(for="date" class="callback--form__wrap__section__label") Дата звонка
-							input(type="text" name="date" placeholder="" class="callback--form__wrap__section__input")
-							input(type="text" name="date" placeholder="" class="callback--form__wrap__section__input")
-						section.callback--form__wrap__section.clearfix
-							textarea(name="comment" class="callback--form__wrap__section__textarea" placeholder="Комментарий")
-						section.callback--form__wrap__section.clearfix
-							button(type="submit" class="callback--form__wrap__section__button") Отправить
-							button(type="reset" class="callback--form__wrap__section__button") Очистить
-		section.main--sidebar__section
-				div.gallery
-					.box--for--picture
-						img(src="" alt="Природа")
-					.box--for--picture
-						img(src="" alt="Природа")
-					.box--for--picture
-						img(src="" alt="Природа")
-					.box--for--picture
-						img(src="" alt="Природа")
-					.box--for--picture
-						img(src="" alt="Природа")
-					.box--for--picture
-						img(src="" alt="Природа")
-		section.main--sidebar__section
-				ul.coordinates
-					li.coordinates__list
-						div.coordinates__list_box--icon
-						a(href="#") г.Москва, ул.Новая 246, офис 214
-					li.coordinates__list
-						div.coordinates__list_box--icon
-						a(href="tel:+79213221232") +7(921) 322-12-32
+	aside.main-sidebar
+		section.main-sidebar__section
+				include _logo-header
+		section.main-sidebar__section
+				include _callback
+		section.main-sidebar__section
+				include _gallery-images
+		section.main-sidebar__section
+				include _coordinates
 	main.contaner
-

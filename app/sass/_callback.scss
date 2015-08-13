@@ -1,0 +1,71 @@
+.callback-form__wrap__section__input, .callback-form__wrap__section__textarea {
+	font-size: 12px;
+  	line-height: 1.667;
+  	padding: 7px;
+  	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+  	-webkit-box-sizing:border-box;
+  	border-style: solid;
+  	border-width: 1px;
+  	border-color: rgb(218, 225, 235);
+  	background-color: rgb(255, 255, 255);
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+	font-size: 12px;
+	line-height: 1.667;
+	color: rgb(218, 225, 235);
+	font-family: "elektra_light_proregular";
+}
+.callback-form__wrap__section__textarea {
+	min-width: 204px;
+	max-width: 204px;
+  	min-height: 71px;
+  	max-height: 71px;
+}
+.callback-form {
+	  background-color: #f4f6f9;
+		padding: 7px 13px;
+}
+.callback-form__header{
+	text-align: center;
+}
+#nameForCallback, #telefonForCallback{
+	display: inline-block;
+	width: 136px;
+  	height: 28px;
+  	float: right;
+}
+.callback-form__wrap__section {
+	margin-bottom: 15px;
+}
+.callback-form__wrap__section__label {
+	float: left;
+	max-height: 28px;
+	padding: 3px 0px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+  	-webkit-box-sizing:border-box;
+}
+#inputForDay, #inputForMonth {
+	width: 50px;
+	height: 25px;
+	float: right;
+	margin-left: 9px;
+}
+.callback-form__wrap__section__button {
+	width: 90px;
+  	height: 35px;
+  	font-size: 15px;
+	font-family: "elektra_light_probold";
+  	color: rgb(255, 255, 255);
+  	border: none;
+}
+#buttonSubmit {
+	background-color: #00b9fe;
+	float: left;
+
+}
+#buttonReset {
+	background-color: #dae1eb;
+	float: right;
+}
