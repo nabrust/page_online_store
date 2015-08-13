@@ -1,0 +1,30 @@
+.online-services {
+  display: table-cell;
+  vertical-align: middle;
+  .container-for-center {
+  float: right;
+  }
+}
+.store__item{
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 5px;
+}
+.store__list{
+  margin: 0px;
+  padding: 0px;
+}
+.store__list__link {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+  display: block;
+  width: 90px;
+  height: 32px;
+}
+.app-store{
+  background-image: url(../img/Layer23.png);
+}
+.google-store{
+  background-image: url(../img/Layer24.png);
+}

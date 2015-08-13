@@ -1,0 +1,38 @@
+.coordinates-wrap {
+  max-width: 230px;
+  background-color: #f4f6f9;
+  padding: 12px 23px 0px;
+}
+.coordinates {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  text-align: center;
+}
+.coordinates__list {
+  display: inline-block;
+  margin-left: 0px;
+  margin: auto;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+  padding-left: 17px;
+  background-position: 0px 1px;
+  text-align: left;
+}
+.adress {
+  background-image: url(../img/ellipse.png);
+}
+.telefon {
+  background-image: url(../img/Layer49.png);
+  min-height: 22px;
+  &:hover {
+    background-image: url(../img/Layer48.png);
+  }
+}
+
+.coordinates__list__link{
+  margin-left: 4px;
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(92, 123, 152);
+}

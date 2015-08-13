@@ -1,15 +1,15 @@
 /* line 1, ../sass/_pattern.scss */
-body {
+html, body {
+  height: 100%;
   font-family: "elektra_light_proregular";
   font-size: 14px;
   line-height: 1.429;
 }
 
-/* line 6, ../sass/_pattern.scss */
+/* line 7, ../sass/_pattern.scss */
 .main-sidebar {
   width: 230px;
   float: left;
-  padding-top: 35px;
 }
 
 /* line 11, ../sass/_pattern.scss */
@@ -21,7 +21,7 @@ body {
 /* line 15, ../sass/_pattern.scss */
 .contaner {
   width: 740px;
-  height: 1000px;
+  height: 500px;
   background-color: red;
   float: right;
 }
@@ -35,6 +35,11 @@ h2 {
 
 /* line 26, ../sass/_pattern.scss */
 .wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  width: 1400px;
+  padding-top: 35px;
   width: 1000px;
   margin: auto;
 }
@@ -155,12 +160,233 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   height: 70px;
   float: left;
   margin-left: 10px;
+  margin-top: 10px;
+  background-color: green;
+  list-style-type: none;
 }
 
-/* line 7, ../sass/_gallery-images.scss */
+/* line 10, ../sass/_gallery-images.scss */
 .gallery {
-  margin-left: -13px;
-  margin-right: -13px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 0px;
+}
+
+/* line 1, ../sass/_coordinates.scss */
+.coordinates-wrap {
+  max-width: 230px;
+  background-color: #f4f6f9;
+  padding: 12px 23px 0px;
+}
+
+/* line 6, ../sass/_coordinates.scss */
+.coordinates {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  text-align: center;
+}
+
+/* line 12, ../sass/_coordinates.scss */
+.coordinates__list {
+  display: inline-block;
+  margin-left: 0px;
+  margin: auto;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+  padding-left: 17px;
+  background-position: 0px 1px;
+  text-align: left;
+}
+
+/* line 22, ../sass/_coordinates.scss */
+.adress {
+  background-image: url(../img/ellipse.png);
+}
+
+/* line 25, ../sass/_coordinates.scss */
+.telefon {
+  background-image: url(../img/Layer49.png);
+  min-height: 22px;
+}
+/* line 28, ../sass/_coordinates.scss */
+.telefon:hover {
+  background-image: url(../img/Layer48.png);
+}
+
+/* line 33, ../sass/_coordinates.scss */
+.coordinates__list__link {
+  margin-left: 4px;
+  display: inline-block;
+  text-decoration: none;
+  color: #5c7b98;
+}
+
+/* line 1, ../sass/_footer.scss */
+.fotter-contaner {
+  width: 1000px;
+  margin: auto;
+}
+/* line 4, ../sass/_footer.scss */
+.fotter-contaner .left {
+  float: left;
+}
+/* line 7, ../sass/_footer.scss */
+.fotter-contaner .center {
+  float: left;
+  width: 540px;
+}
+/* line 11, ../sass/_footer.scss */
+.fotter-contaner .right {
+  float: right;
+}
+
+/* line 16, ../sass/_footer.scss */
+.main-footer {
+  background-color: #6b459a;
+  background-image: url(../img/Layer26.png);
+}
+
+/* line 20, ../sass/_footer.scss */
+.main-footer__fotter-contaner__section {
+  width: 230px;
+  height: 240px;
+  display: table;
+}
+
+/* line 25, ../sass/_footer.scss */
+.container-for-center {
+  display: table;
+}
+
+/* line 1, ../sass/_logo-footer.scss */
+.logo-footer {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 4, ../sass/_logo-footer.scss */
+.logo-footer .container-for-center {
+  float: left;
+}
+
+/* line 1, ../sass/_footer-menu.scss */
+.main-footer__footer-menu {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 4, ../sass/_footer-menu.scss */
+.main-footer__footer-menu .container-for-center {
+  margin: auto;
+}
+
+/* line 8, ../sass/_footer-menu.scss */
+.main-footer__footer-menu__section {
+  display: inline-block;
+  margin: 30px;
+}
+
+/* line 12, ../sass/_footer-menu.scss */
+.main-footer__footer-menu__section__header__string,
+.footer-menu__section__list__link {
+  margin: 0px;
+  font-family: "elektra_light_probold";
+  color: white;
+  font-size: 15px;
+  line-height: 1.667;
+}
+
+/* line 20, ../sass/_footer-menu.scss */
+.footer-menu__section__list__link {
+  font-family: "elektra_light_proregular";
+}
+
+/* line 23, ../sass/_footer-menu.scss */
+.main-footer__footer-menu__section__list__wrap {
+  list-style-type: none;
+  padding: 0px;
+  margin-top: 0;
+}
+
+/* line 1, ../sass/_online-store.scss */
+.online-services {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 4, ../sass/_online-store.scss */
+.online-services .container-for-center {
+  float: right;
+}
+
+/* line 8, ../sass/_online-store.scss */
+.store__item {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* line 13, ../sass/_online-store.scss */
+.store__list {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 17, ../sass/_online-store.scss */
+.store__list__link {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+  display: block;
+  width: 90px;
+  height: 32px;
+}
+
+/* line 25, ../sass/_online-store.scss */
+.app-store {
+  background-image: url(../img/Layer23.png);
+}
+
+/* line 28, ../sass/_online-store.scss */
+.google-store {
+  background-image: url(../img/Layer24.png);
+}
+
+/* line 1, ../sass/__social.scss */
+.social-network__list {
+  padding-left: 0px;
+}
+
+/* line 4, ../sass/__social.scss */
+.social-network__item {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* line 9, ../sass/__social.scss */
+.social-network__link {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+  display: block;
+  width: 38px;
+  height: 38px;
+  background-image: url(../img/Layer25.png);
+  background-repeat: no-repeat;
+}
+
+/* line 19, ../sass/__social.scss */
+.link_vk {
+  background-position: 0px 0px;
+}
+
+/* line 22, ../sass/__social.scss */
+.link_tw {
+  background-position: -105px 0px;
+}
+
+/* line 25, ../sass/__social.scss */
+.link_fb {
+  background-position: -55px 0px;
 }
 
 /* line 1, ../sass/_clearfix.scss */

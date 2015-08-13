@@ -1,0 +1,27 @@
+.fotter-contaner{
+  width: 1000px;
+  margin: auto;
+  .left {
+    float: left;
+  }
+  .center {
+    float: left;
+    width: 540px;
+  }
+  .right{
+    float: right;
+  }
+
+}
+.main-footer {
+  background-color: #6b459a;
+  background-image: url(../img/Layer26.png);
+}
+.main-footer__fotter-contaner__section {
+  width: 230px;
+  height: 240px;
+  display: table;
+}
+.container-for-center {
+  display: table;
+}

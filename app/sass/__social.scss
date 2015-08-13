@@ -1,0 +1,27 @@
+.social-network__list{
+  padding-left: 0px;
+}
+.social-network__item {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 5px;
+}
+.social-network__link{
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+  display: block;
+  width: 38px;
+  height: 38px;
+  background-image: url(../img/Layer25.png);
+  background-repeat: no-repeat;
+}
+.link_vk{
+  background-position: 0px 0px;
+}
+.link_tw{
+  background-position: -105px 0px;
+}
+.link_fb{
+  background-position: -55px 0px;
+}

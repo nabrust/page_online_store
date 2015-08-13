@@ -1,4 +1,5 @@
-body {
+html,body {
+  height: 100%;
   font-family: "elektra_light_proregular";
   font-size: 14px;
   line-height: 1.429;
@@ -6,7 +7,6 @@ body {
 .main-sidebar {
   width: 230px;
   float: left;
-  padding-top: 35px;
 }
 .main-sidebar__section {
   margin-bottom: 15px;
@@ -14,7 +14,7 @@ body {
 }
 .contaner {
   width: 740px;
-  height: 1000px;
+  height: 500px;
   background-color: red;
   float: right;
 }
@@ -24,6 +24,11 @@ h2 {
   line-height: 0.8;
 }
 .wrapper {
+  min-height: 100%;
+	height: auto!important;
+	height: 100%;
+	width: 1400px;
+  padding-top: 35px;
   width: 1000px;
   margin: auto;
 }

@@ -1,0 +1,27 @@
+.main-footer__footer-menu{
+  display: table-cell;
+  vertical-align: middle;
+  .container-for-center {
+    margin: auto;
+  }
+}
+.main-footer__footer-menu__section {
+  display: inline-block;
+  margin: 30px;
+}
+.main-footer__footer-menu__section__header__string,
+.footer-menu__section__list__link{
+  margin:0px;
+  font-family: "elektra_light_probold";
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  line-height: 1.667;
+}
+.footer-menu__section__list__link{
+  font-family: "elektra_light_proregular";
+}
+.main-footer__footer-menu__section__list__wrap {
+  list-style-type: none;
+  padding: 0px;
+  margin-top: 0;
+}
