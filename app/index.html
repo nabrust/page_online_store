@@ -14,7 +14,7 @@
     <script type="application/javascript" src="bower/modernizer/modernizr.js"></script>
   </head>
   <body>
-    <div class="wrapper clearfix">
+    <div class="wrapper">
       <aside class="main-sidebar">
         <section class="main-sidebar__section">
           <div class="main-header">
@@ -27,23 +27,23 @@
               <h2 class="callback-form__header__string">Заказать звонок</h2>
             </header>
             <div class="callback-form__wrap">
-              <section class="callback-form__wrap__section clearfix">
+              <section class="callback-form__wrap__section">
                 <label for="name" class="callback-form__wrap__section__label">Ваше имя</label>
                 <input type="text" name="name" placeholder="Константин" id="nameForCallback" class="callback-form__wrap__section__input"/>
               </section>
-              <section class="callback-form__wrap__section clearfix">
+              <section class="callback-form__wrap__section">
                 <label for="tel" class="callback-form__wrap__section__label">Телефон</label>
                 <input type="tel" name="tel" placeholder="+7 (912) 000-00-00" id="telefonForCallback" class="callback-form__wrap__section__input"/>
               </section>
-              <section class="callback-form__wrap__section clearfix">
+              <section class="callback-form__wrap__section">
                 <label for="date" class="callback-form__wrap__section__label">Дата звонка</label>
                 <input type="text" name="date" placeholder="" id="inputForDay" class="callback-form__wrap__section__input"/>
                 <input type="text" name="date" placeholder="" id="inputForMonth" class="callback-form__wrap__section__input"/>
               </section>
-              <section class="callback-form__wrap__section clearfix">
+              <section class="callback-form__wrap__section">
                 <textarea name="comment" placeholder="Комментарий" class="callback-form__wrap__section__textarea"></textarea>
               </section>
-              <section class="callback-form__wrap__section clearfix">
+              <section class="callback-form__wrap__section">
                 <button type="submit" id="buttonSubmit" class="callback-form__wrap__section__button">Отправить</button>
                 <button type="reset" id="buttonReset" class="callback-form__wrap__section__button">Очистить</button>
               </section>
@@ -51,7 +51,7 @@
           </form>
         </section>
         <section class="main-sidebar__section">
-          <ul class="gallery clearfix">
+          <ul class="gallery">
             <li class="box-for-picture"><img src="../img/nature9.png" alt="Природа" class="images-for-gallery"/></li>
             <li class="box-for-picture"><img src="../img/nature1.png" alt="Природа" class="images-for-gallery"/></li>
             <li class="box-for-picture"><img src="../img/nature2.png" alt="Природа" class="images-for-gallery"/></li>
@@ -73,11 +73,238 @@
         </section>
       </aside>
       <main class="contaner">
+        <section class="section-by-container">
+          <div class="slaider"><img src="../img/phone2.png" alt="Слайдер"/></div>
+        </section>
+        <section class="section-by-container">
+          <header class="section-by-container__header">
+            <h2 class="section-by-container__header-string">Популярные товары</h2>
+          </header>
+          <ul class="product-list">
+            <li class="product-item">
+              <header class="product__header"><img src="../img/Layer10.png" alt="моноблок" class="product-picture"/><a href="#" class="product-link">Apple Thunderb Display 27"</a></header>
+              <ul class="product__characteristic-list">
+                <li class="characteristik-item">
+                  <ul class="characteristik-item__string">
+                    <li class="characteristik-item__item index">Артикул</li>
+                    <li class="characteristik-item__item value">42787825</li>
+                  </ul>
+                </li>
+                <li class="characteristik-item">
+                  <ul class="characteristik-item__string">
+                    <li class="characteristik-item__item index">Опция</li>
+                    <li class="characteristik-item__item value">включена</li>
+                  </ul>
+                </li>
+                <li class="characteristik-item">
+                  <ul class="characteristik-item__string">
+                    <li class="characteristik-item__item index">Цвет</li>
+                    <li class="characteristik-item__item value">серебристый</li>
+                  </ul>
+                </li>
+                <li class="characteristik-item">
+                  <ul class="characteristik-item__string">
+                    <li class="characteristik-item__item index">Размер</li>
+                    <li class="characteristik-item__item value">1280*1245*90</li>
+                  </ul>
+                </li>
+                <li class="characteristik-item">
+                  <ul class="characteristik-item__string">
+                    <li class="characteristik-item__item index">Вес</li>
+                    <li class="characteristik-item__item value">9 кг</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="product-item">
+              <header class="product__header"><img src="../img/Layer51.png" alt="моноблок" class="product-picture"/><a href="#" class="product-link">IMac 27"</a></header>
+              <ul class="product__characteristic-list">
+                <li class="characteristik-item">
+                  <ul class="characteristik-item__string">
+                    <li class="characteristik-item__item index">Артикул</li>
+                    <li class="characteristik-item__item value">42787825</li>
+                  </ul>
+                </li>
+                <li class="characteristik-item">
+                  <ul class="characteristik-item__string">
+                    <li class="characteristik-item__item index">Опция</li>
+                    <li class="characteristik-item__item value">включена</li>
+                  </ul>
+                </li>
+                <li class="characteristik-item">
+                  <ul class="characteristik-item__string">
+                    <li class="characteristik-item__item index">Цвет</li>
+                    <li class="characteristik-item__item value">серебристый</li>
+                  </ul>
+                </li>
+                <li class="characteristik-item">
+                  <ul class="characteristik-item__string">
+                    <li class="characteristik-item__item index">Размер</li>
+                    <li class="characteristik-item__item value">1280*1245*90</li>
+                  </ul>
+                </li>
+                <li class="characteristik-item">
+                  <ul class="characteristik-item__string">
+                    <li class="characteristik-item__item index">Вес</li>
+                    <li class="characteristik-item__item value">9 кг</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="product-item">
+              <header class="product__header"><img src="../img/Layer52.png" alt="моноблок" class="product-picture"/><a href="#" class="product-link">iPhone 5s Gold</a></header>
+              <ul class="product__characteristic-list">
+                <li class="characteristik-item">
+                  <ul class="characteristik-item__string">
+                    <li class="characteristik-item__item index">Артикул</li>
+                    <li class="characteristik-item__item value">42787825</li>
+                  </ul>
+                </li>
+                <li class="characteristik-item">
+                  <ul class="characteristik-item__string">
+                    <li class="characteristik-item__item index">Опция</li>
+                    <li class="characteristik-item__item value">включена</li>
+                  </ul>
+                </li>
+                <li class="characteristik-item">
+                  <ul class="characteristik-item__string">
+                    <li class="characteristik-item__item index">Цвет</li>
+                    <li class="characteristik-item__item value">серебристый</li>
+                  </ul>
+                </li>
+                <li class="characteristik-item">
+                  <ul class="characteristik-item__string">
+                    <li class="characteristik-item__item index">Размер</li>
+                    <li class="characteristik-item__item value">1280*1245*90</li>
+                  </ul>
+                </li>
+                <li class="characteristik-item">
+                  <ul class="characteristik-item__string">
+                    <li class="characteristik-item__item index">Вес</li>
+                    <li class="characteristik-item__item value">9 кг</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="section-by-container">
+          <header class="section-by-container__header">
+            <h2 class="section-by-container__header-string">Товары со скидкой</h2>
+            <ul class="product-list">
+              <li class="product-item">
+                <header class="product__header"><img src="../img/Layer53.png" alt="моноблок" class="product-picture"/><a href="#" class="product-link">iPad Air Wi-Fi 128GB - Silver</a></header>
+                <ul class="product__characteristic-list">
+                  <li class="characteristik-item">
+                    <ul class="characteristik-item__string">
+                      <li class="characteristik-item__item index">Артикул</li>
+                      <li class="characteristik-item__item value">42787825</li>
+                    </ul>
+                  </li>
+                  <li class="characteristik-item">
+                    <ul class="characteristik-item__string">
+                      <li class="characteristik-item__item index">Опция</li>
+                      <li class="characteristik-item__item value">включена</li>
+                    </ul>
+                  </li>
+                  <li class="characteristik-item">
+                    <ul class="characteristik-item__string">
+                      <li class="characteristik-item__item index">Цвет</li>
+                      <li class="characteristik-item__item value">серебристый</li>
+                    </ul>
+                  </li>
+                  <li class="characteristik-item">
+                    <ul class="characteristik-item__string">
+                      <li class="characteristik-item__item index">Размер</li>
+                      <li class="characteristik-item__item value">1280*1245*90</li>
+                    </ul>
+                  </li>
+                  <li class="characteristik-item">
+                    <ul class="characteristik-item__string">
+                      <li class="characteristik-item__item index">Вес</li>
+                      <li class="characteristik-item__item value">9 кг</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="product-item">
+                <header class="product__header"><img src="../img/Layer54.png" alt="моноблок" class="product-picture"/><a href="#" class="product-link">Apple iPod nano 7G 16 ГБ Blue</a></header>
+                <ul class="product__characteristic-list">
+                  <li class="characteristik-item">
+                    <ul class="characteristik-item__string">
+                      <li class="characteristik-item__item index">Артикул</li>
+                      <li class="characteristik-item__item value">42787825</li>
+                    </ul>
+                  </li>
+                  <li class="characteristik-item">
+                    <ul class="characteristik-item__string">
+                      <li class="characteristik-item__item index">Опция</li>
+                      <li class="characteristik-item__item value">включена</li>
+                    </ul>
+                  </li>
+                  <li class="characteristik-item">
+                    <ul class="characteristik-item__string">
+                      <li class="characteristik-item__item index">Цвет</li>
+                      <li class="characteristik-item__item value">серебристый</li>
+                    </ul>
+                  </li>
+                  <li class="characteristik-item">
+                    <ul class="characteristik-item__string">
+                      <li class="characteristik-item__item index">Размер</li>
+                      <li class="characteristik-item__item value">1280*1245*90</li>
+                    </ul>
+                  </li>
+                  <li class="characteristik-item">
+                    <ul class="characteristik-item__string">
+                      <li class="characteristik-item__item index">Вес</li>
+                      <li class="characteristik-item__item value">9 кг</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="product-item">
+                <header class="product__header"><img src="../img/Layer55.png" alt="моноблок" class="product-picture"/><a href="#" class="product-link">Роутер Wi-Fi Apple AirPort</a></header>
+                <ul class="product__characteristic-list">
+                  <li class="characteristik-item">
+                    <ul class="characteristik-item__string">
+                      <li class="characteristik-item__item index">Артикул</li>
+                      <li class="characteristik-item__item value">42787825</li>
+                    </ul>
+                  </li>
+                  <li class="characteristik-item">
+                    <ul class="characteristik-item__string">
+                      <li class="characteristik-item__item index">Опция</li>
+                      <li class="characteristik-item__item value">включена</li>
+                    </ul>
+                  </li>
+                  <li class="characteristik-item">
+                    <ul class="characteristik-item__string">
+                      <li class="characteristik-item__item index">Цвет</li>
+                      <li class="characteristik-item__item value">серебристый</li>
+                    </ul>
+                  </li>
+                  <li class="characteristik-item">
+                    <ul class="characteristik-item__string">
+                      <li class="characteristik-item__item index">Размер</li>
+                      <li class="characteristik-item__item value">1280*1245*90</li>
+                    </ul>
+                  </li>
+                  <li class="characteristik-item">
+                    <ul class="characteristik-item__string">
+                      <li class="characteristik-item__item index">Вес</li>
+                      <li class="characteristik-item__item value">9 кг</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </header>
+        </section>
       </main>
     </div>
     <!-- Главный футер-->
     <footer class="main-footer">
-      <div class="fotter-contaner clearfix">
+      <div class="fotter-contaner">
         <section class="main-footer__fotter-contaner__section left">
           <div class="logo-footer">
             <dib class="container-for-center"><img src="img/logo_copy.png" alt="Логотип" class="logo-footer_image"/></dib>

@@ -14,9 +14,8 @@ html,body {
 }
 .contaner {
   width: 740px;
-  height: 500px;
-  background-color: red;
   float: right;
+  color: rgb(92, 123, 152);
 }
 h2 {
   font-family: "elektra_light_probold";
@@ -24,6 +23,7 @@ h2 {
   line-height: 0.8;
 }
 .wrapper {
+  @include clearfix;
   min-height: 100%;
 	height: auto!important;
 	height: 100%;

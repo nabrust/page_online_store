@@ -25,6 +25,8 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 .callback-form {
 	background-color: #f4f6f9;
 	padding: 7px 13px;
+	@include clearfix;
+	
 }
 .callback-form__header{
 	text-align: center;
@@ -36,6 +38,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   float: right;
 }
 .callback-form__wrap__section {
+	@include clearfix;
 	margin-bottom: 15px;
 }
 .callback-form__wrap__section__label {
