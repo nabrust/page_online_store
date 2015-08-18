@@ -42,7 +42,7 @@ h2 {
   width: 1000px;
   margin: auto;
 }
-/* line 2, ../sass/_clearfix.scss */
+/* line 3, ../sass/_clearfix.scss */
 .wrapper:before, .wrapper:after {
   content: " ";
   display: table;
@@ -107,7 +107,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   background-color: #f4f6f9;
   padding: 7px 13px;
 }
-/* line 2, ../sass/_clearfix.scss */
+/* line 3, ../sass/_clearfix.scss */
 .callback-form:before, .callback-form:after {
   content: " ";
   display: table;
@@ -138,7 +138,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 .callback-form__wrap__section {
   margin-bottom: 15px;
 }
-/* line 2, ../sass/_clearfix.scss */
+/* line 3, ../sass/_clearfix.scss */
 .callback-form__wrap__section:before, .callback-form__wrap__section:after {
   content: " ";
   display: table;
@@ -209,7 +209,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   margin-right: -10px;
   padding: 0px;
 }
-/* line 2, ../sass/_clearfix.scss */
+/* line 3, ../sass/_clearfix.scss */
 .gallery:before, .gallery:after {
   content: " ";
   display: table;
@@ -252,7 +252,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
 /* line 22, ../sass/_coordinates.scss */
 .adress {
-  background-image: url(../img/ellipse.png);
+  background-image: url(../img/Ellipse.png);
 }
 
 /* line 25, ../sass/_coordinates.scss */
@@ -327,7 +327,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   margin-left: -25px;
   padding-left: 0px;
 }
-/* line 2, ../sass/_clearfix.scss */
+/* line 3, ../sass/_clearfix.scss */
 .product-list:before, .product-list:after {
   content: " ";
   display: table;
@@ -356,7 +356,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   height: 100px;
   padding: 0px 10px 0px 10px;
 }
-/* line 2, ../sass/_clearfix.scss */
+/* line 3, ../sass/_clearfix.scss */
 .product__header:before, .product__header:after {
   content: " ";
   display: table;
@@ -394,7 +394,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   padding-left: 20px;
   padding-right: 20px;
 }
-/* line 2, ../sass/_clearfix.scss */
+/* line 3, ../sass/_clearfix.scss */
 .characteristik-item__string:before, .characteristik-item__string:after {
   content: " ";
   display: table;
@@ -429,7 +429,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   width: 1000px;
   margin: auto;
 }
-/* line 2, ../sass/_clearfix.scss */
+/* line 3, ../sass/_clearfix.scss */
 .fotter-contaner:before, .fotter-contaner:after {
   content: " ";
   display: table;
@@ -500,7 +500,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   margin: 30px;
 }
 
-/* line 12, ../sass/_footer-menu.scss */
+/* line 13, ../sass/_footer-menu.scss */
 .main-footer__footer-menu__section__header__string,
 .footer-menu__section__list__link {
   margin: 0px;
@@ -563,6 +563,89 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 /* line 28, ../sass/_online-store.scss */
 .google-store {
   background-image: url(../img/Layer24.png);
+}
+
+/* line 1, ../sass/_tooltip.scss */
+.tooltip {
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity0 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+/* line 10, ../sass/_tooltip.scss */
+.inner__inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+/* line 20, ../sass/_tooltip.scss */
+.inner__inner:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px;
+}
+
+/* line 31, ../sass/_tooltip.scss */
+.tooltip_right, .tooltip_left {
+  padding: 0 5px;
+}
+/* line 35, ../sass/_tooltip.scss */
+.tooltip_right .inner__inner:after, .tooltip_left .inner__inner:after {
+  top: 50%;
+  margin-top: -5px;
+}
+
+/* line 41, ../sass/_tooltip.scss */
+.tooltip_top, .tooltip_bottom {
+  padding: 5px 0;
+}
+/* line 45, ../sass/_tooltip.scss */
+.tooltip_top .inner__inner:after, .tooltip_bottom .inner__inner:after {
+  left: 50%;
+  margin-left: -5px;
+}
+
+/* line 60, ../sass/_tooltip.scss */
+.tooltip_top .inner__inner:after {
+  bottom: 0;
+  border-top-color: #000;
+  border-bottom-width: 0px;
+}
+
+/* line 60, ../sass/_tooltip.scss */
+.tooltip_left .inner__inner:after {
+  right: 0;
+  border-left-color: #000;
+  border-right-width: 0px;
+}
+
+/* line 60, ../sass/_tooltip.scss */
+.tooltip_right .inner__inner:after {
+  left: 0;
+  border-right-color: #000;
+  border-left-width: 0px;
+}
+
+/* line 60, ../sass/_tooltip.scss */
+.tooltip_bottom .inner__inner:after {
+  top: 0;
+  border-bottom-color: #000;
+  border-top-width: 0px;
 }
 
 /* line 1, ../sass/__social.scss */

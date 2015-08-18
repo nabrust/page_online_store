@@ -1,0 +1,67 @@
+.tooltip {
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.inner__inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  &:after{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px;
+  }
+}
+.tooltip_right, .tooltip_left {
+  padding: 0 5px;
+
+  .inner__inner {
+    &:after {
+      top: 50%;
+      margin-top: -5px;
+    }
+  }
+}
+.tooltip_top, .tooltip_bottom {
+  padding: 5px 0;
+
+  .inner__inner {
+    &:after {
+      left: 50%;
+      margin-left: -5px;
+    }
+  }
+}
+$positions: top, left, right, bottom;
+
+@each $position in $positions {
+
+	$length: length($positions);
+	$opposite: nth($positions, ($length - index($positions, $position)) + 1);
+
+	.tooltip_#{$position} {
+		.inner__inner {
+			&:after {
+				#{$opposite} : 0;
+				border-#{$position}-color: #000;
+				border-#{$opposite}-width: 0px;
+			}
+		}
+	}
+}
