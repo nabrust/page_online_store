@@ -4,9 +4,31 @@ var plagins = (function () {
       $(".callback-form_select").simpleSelect();
       $('.selectbox__dropdown').jScrollPane();
     };
+
   var _setUpListners = function (){
-       $('.slider-button').on('click', sliderModule);
+      $('.slider-button').on('click', sliderModule);
+      $(window).scroll(scrollButton);
+      $('.button-by-scroll').on('click', scrollUp);
+  
+    };
+  var scrollUp = function(){
+
+    $("body").animate({"scrollTop":0},"slow");
+  };
+  var scrollButton = function(){
+
+    if($(this).scrollTop() != 0) {
+ 
+    $('.button-by-scroll').fadeIn();
+ 
+    } else {
+ 
+    $('.button-by-scroll').fadeOut();
+ 
     }
+ 
+  };
+  
   var sliderModule = function(){
 
     var

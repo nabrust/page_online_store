@@ -3,6 +3,8 @@ html,body {
   font-family: "elektra_light_proregular";
   font-size: 14px;
   line-height: 1.429;
+  @include clearfix;
+
 }
 .main-sidebar {
   width: 230px;
@@ -31,4 +33,18 @@ h2 {
   padding-top: 35px;
   width: 1000px;
   margin: auto;
+}
+.button-by-scroll{
+ position: fixed;
+ display: none;
+ z-index: 9999;
+ right: 5px;
+ bottom:250px;
+}
+.string-up-button {
+  display: block;
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 17px;
+  color: #ffffff;
 }

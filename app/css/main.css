@@ -5,34 +5,47 @@ html, body {
   font-size: 14px;
   line-height: 1.429;
 }
+/* line 3, ../sass/_clearfix.scss */
+html:before, html:after, body:before, body:after {
+  content: " ";
+  display: table;
+}
+/* line 7, ../sass/_clearfix.scss */
+html:after, body:after {
+  clear: both;
+}
+/* line 10, ../sass/_clearfix.scss */
+html, body {
+  *zoom: 1;
+}
 
-/* line 7, ../sass/_pattern.scss */
+/* line 9, ../sass/_pattern.scss */
 .main-sidebar {
   width: 230px;
   float: left;
 }
 
-/* line 11, ../sass/_pattern.scss */
+/* line 13, ../sass/_pattern.scss */
 .main-sidebar__section {
   margin-bottom: 15px;
   color: #5c7b98;
 }
 
-/* line 15, ../sass/_pattern.scss */
+/* line 17, ../sass/_pattern.scss */
 .contaner {
   width: 740px;
   float: right;
   color: #5c7b98;
 }
 
-/* line 20, ../sass/_pattern.scss */
+/* line 22, ../sass/_pattern.scss */
 h2 {
   font-family: "elektra_light_probold";
   font-size: 25px;
   line-height: 0.8;
 }
 
-/* line 25, ../sass/_pattern.scss */
+/* line 27, ../sass/_pattern.scss */
 .wrapper {
   min-height: 100%;
   height: auto !important;
@@ -54,6 +67,24 @@ h2 {
 /* line 10, ../sass/_clearfix.scss */
 .wrapper {
   *zoom: 1;
+}
+
+/* line 37, ../sass/_pattern.scss */
+.button-by-scroll {
+  position: fixed;
+  display: none;
+  z-index: 9999;
+  right: 5px;
+  bottom: 250px;
+}
+
+/* line 44, ../sass/_pattern.scss */
+.string-up-button {
+  display: block;
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 17px;
+  color: #ffffff;
 }
 
 /* line 3, ../sass/_logo-header.scss */
@@ -422,14 +453,15 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 .characteristik-item__item {
   display: inline-block;
   max-width: 60%;
+  overflow: hidden;
 }
 
-/* line 89, ../sass/_index.scss */
+/* line 90, ../sass/_index.scss */
 .index {
   float: left;
 }
 
-/* line 92, ../sass/_index.scss */
+/* line 93, ../sass/_index.scss */
 .value {
   float: right;
 }
