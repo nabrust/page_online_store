@@ -1,0 +1,125 @@
+.slider {
+  height: 300px;
+  overflow: hidden;
+}
+.slider-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  @include clearfix;
+  width: 5000px;
+  position: relative;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  left: 0;
+}
+.slider-layer {
+  width: 750px;
+}
+.slider-item {
+  float: left;
+}
+.slide_wrap{
+  width: 740px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.container__slider-layer{
+  @include clearfix;
+  width: 740px;
+  position: relative;
+  bottom: 180px;
+}
+.slider__button-left, .slider__button-right{
+  display: block;
+  right: 10px;
+  width: 60px;
+  height: 40px;
+  background-color: #f7f7f7;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-box-sizing : border-box;
+  -moz-box-sizing : border-box;
+  padding: 10px 0;
+  font-size: 17px;
+  color: rgb(92, 123, 152);
+  line-height: 1.2;
+  font-family: "elektra_light_probold";
+  cursor: pointer;
+}
+.slider__button-left {
+  float: left;
+  left: 20px;
+  position: relative;
+  &:after{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -15px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 15px solid #f7f7f7;
+    top:50%;
+    margin-top: -20px;
+  }
+  &:hover{
+    color: #ffffff;
+    background-color: #00b9fe;
+  }
+  &:hover::after{
+    border-right: 15px solid #00b9fe;
+  }
+}
+.slider__button-right {
+  float: right;
+  right: 20px;
+  position: relative;
+  &:after{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 100%;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 15px solid #f7f7f7;
+    top:50%;
+    margin-top: -20px;
+  }
+  &:hover{
+    color: #ffffff;
+    background-color: #00b9fe;
+  }
+  &:hover::after{
+    border-left: 15px solid #00b9fe;
+  }
+}
+.slider-commit {
+  height: 76px;
+  position: relative;
+  bottom: 83px;
+  background-color: black;
+  opacity: 0.549;
+  padding: 20px;
+  box-sizing: border-box;
+  -webkit-box-sizing : border-box;
+  -moz-box-sizing : border-box;
+
+}
+span.slider-commit__string {
+  display: block;
+  line-height: 1.2;
+  font-size:  18px;
+  color: #FFFFFF;
+}
+.slider-commit__link{
+  color: rgb(0, 185, 254);
+  line-height: 1.2;
+  font-size:  18px;
+}

@@ -163,14 +163,6 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 }
 
 /* line 52, ../sass/_callback.scss */
-#inputForDay, #inputForMonth {
-  width: 50px;
-  height: 25px;
-  float: right;
-  margin-left: 9px;
-}
-
-/* line 58, ../sass/_callback.scss */
 .callback-form__wrap__section__button {
   width: 90px;
   height: 35px;
@@ -180,16 +172,34 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   border: none;
 }
 
-/* line 66, ../sass/_callback.scss */
+/* line 60, ../sass/_callback.scss */
 #buttonSubmit {
   background-color: #00b9fe;
   float: left;
 }
 
-/* line 71, ../sass/_callback.scss */
+/* line 65, ../sass/_callback.scss */
 #buttonReset {
   background-color: #dae1eb;
   float: right;
+}
+
+/* line 70, ../sass/_callback.scss */
+.jspVerticalBar, .jspTrack {
+  width: 7px;
+  background-color: transparent !important;
+}
+
+/* line 75, ../sass/_callback.scss */
+.jspDrag {
+  background: #00b9fe;
+  width: 7px;
+}
+
+/* line 79, ../sass/_callback.scss */
+.selectbox__dropdown-list {
+  list-style-type: none;
+  padding-left: 0px;
 }
 
 /* line 1, ../sass/_gallery-images.scss */
@@ -646,6 +656,184 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   top: 0;
   border-bottom-color: #000;
   border-top-width: 0px;
+}
+
+/* line 1, ../sass/_slider.scss */
+.slider {
+  height: 300px;
+  overflow: hidden;
+}
+
+/* line 5, ../sass/_slider.scss */
+.slider-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 5000px;
+  position: relative;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  left: 0;
+}
+/* line 3, ../sass/_clearfix.scss */
+.slider-list:before, .slider-list:after {
+  content: " ";
+  display: table;
+}
+/* line 7, ../sass/_clearfix.scss */
+.slider-list:after {
+  clear: both;
+}
+/* line 10, ../sass/_clearfix.scss */
+.slider-list {
+  *zoom: 1;
+}
+
+/* line 18, ../sass/_slider.scss */
+.slider-layer {
+  width: 750px;
+}
+
+/* line 21, ../sass/_slider.scss */
+.slider-item {
+  float: left;
+}
+
+/* line 24, ../sass/_slider.scss */
+.slide_wrap {
+  width: 740px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 30, ../sass/_slider.scss */
+.container__slider-layer {
+  width: 740px;
+  position: relative;
+  bottom: 180px;
+}
+/* line 3, ../sass/_clearfix.scss */
+.container__slider-layer:before, .container__slider-layer:after {
+  content: " ";
+  display: table;
+}
+/* line 7, ../sass/_clearfix.scss */
+.container__slider-layer:after {
+  clear: both;
+}
+/* line 10, ../sass/_clearfix.scss */
+.container__slider-layer {
+  *zoom: 1;
+}
+
+/* line 36, ../sass/_slider.scss */
+.slider__button-left, .slider__button-right {
+  display: block;
+  right: 10px;
+  width: 60px;
+  height: 40px;
+  background-color: #f7f7f7;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 10px 0;
+  font-size: 17px;
+  color: #5c7b98;
+  line-height: 1.2;
+  font-family: "elektra_light_probold";
+  cursor: pointer;
+}
+
+/* line 53, ../sass/_slider.scss */
+.slider__button-left {
+  float: left;
+  left: 20px;
+  position: relative;
+}
+/* line 57, ../sass/_slider.scss */
+.slider__button-left:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -15px;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 15px solid #f7f7f7;
+  top: 50%;
+  margin-top: -20px;
+}
+/* line 70, ../sass/_slider.scss */
+.slider__button-left:hover {
+  color: #ffffff;
+  background-color: #00b9fe;
+}
+/* line 74, ../sass/_slider.scss */
+.slider__button-left:hover::after {
+  border-right: 15px solid #00b9fe;
+}
+
+/* line 78, ../sass/_slider.scss */
+.slider__button-right {
+  float: right;
+  right: 20px;
+  position: relative;
+}
+/* line 82, ../sass/_slider.scss */
+.slider__button-right:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 100%;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 15px solid #f7f7f7;
+  top: 50%;
+  margin-top: -20px;
+}
+/* line 95, ../sass/_slider.scss */
+.slider__button-right:hover {
+  color: #ffffff;
+  background-color: #00b9fe;
+}
+/* line 99, ../sass/_slider.scss */
+.slider__button-right:hover::after {
+  border-left: 15px solid #00b9fe;
+}
+
+/* line 103, ../sass/_slider.scss */
+.slider-commit {
+  height: 76px;
+  position: relative;
+  bottom: 83px;
+  background-color: black;
+  opacity: 0.549;
+  padding: 20px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/* line 115, ../sass/_slider.scss */
+span.slider-commit__string {
+  display: block;
+  line-height: 1.2;
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+/* line 121, ../sass/_slider.scss */
+.slider-commit__link {
+  color: #00b9fe;
+  line-height: 1.2;
+  font-size: 18px;
 }
 
 /* line 1, ../sass/__social.scss */

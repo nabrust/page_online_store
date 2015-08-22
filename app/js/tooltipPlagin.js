@@ -4,7 +4,9 @@ $(document).ready(function(){
 
     e.preventDefault();
 
-    $('.callback-form__wrap__section__input').tooltipPlagin({});
+    $('label').each(function(){
+      $(this).tooltipPlagin({});
+    });
 
   });
 
@@ -18,7 +20,7 @@ $.fn.tooltipPlagin = function(options) {
   };
 
   var
-    markup = '<div class="tooltip tooltip_' + options.position +'">' +
+    markup = '<div class="tooltip tooltip_' + options.position +'">'  +
                   '<div class="inner__inner">' + options.content + '</div>' +
               '</div>';
 
@@ -26,9 +28,35 @@ $.fn.tooltipPlagin = function(options) {
     $this = this,
     body = $('body');
 
+  $this.addClass('tooltipstered').attr('data-tooltip-position', options.position);
+
+  	body.append(markup);
 
   body.append(markup);
   _positionIt($this, body.find('.tooltip').last(), options.position);
+
+  $(document).on('click', function(){
+		$('.tooltip').remove();
+	});
+
+	$(window).resize(function(){
+		var
+			tooltips = $('.tooltip');
+
+		var
+			tooltipsArray = [];
+
+		tooltips.each(function(){
+			tooltipsArray.push($(this));
+		});
+
+		$('.tooltipstered').each(function(index){
+			var
+				position = $(this).data('tooltip-position');
+
+			_positionIt($(this), tooltipsArray[index], position);
+		});
+	});
 
   function _positionIt(elem, tooltip, position) {
 
@@ -45,7 +73,7 @@ $.fn.tooltipPlagin = function(options) {
   		// измеряем тултип
 
   		var
-  			tooltipWidth = tooltip.outerWidth(true),
+  			tooltipWidth = tooltip.outerWidth( true),
   			tooltipHeight = elem.outerHeight(true),
   			leftCentered = (elemWidth / 2) - (tooltipWidth / 2),
   			topCentered = (elemHeight / 2) - (tooltipHeight / 2);

@@ -10,8 +10,12 @@ form.callback-form
       input(type="tel" name="tel" placeholder="+7 (912) 000-00-00" class="callback-form__wrap__section__input" id="telefonForCallback")
     section.callback-form__wrap__section
       label(for="date" class="callback-form__wrap__section__label") Дата звонка
-      input(type="text" name="date" placeholder="" class="callback-form__wrap__section__input" id="inputForDay")
-      input(type="text" name="date" placeholder="" class="callback-form__wrap__section__input" id="inputForMonth")
+        select(class="callback-form_select" placeholder="01")
+          -for(var i = 1; i<=31; i++)
+            option(value=i)= i
+        select(class="callback-form_select" placeholder="01")
+          -for(var i = 1; i<=12; i++)
+            option(value=i)= i
     section.callback-form__wrap__section
       textarea(name="comment" class="callback-form__wrap__section__textarea" placeholder="Комментарий")
     section.callback-form__wrap__section

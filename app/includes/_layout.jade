@@ -10,13 +10,20 @@ html(lang="ru-RU")
 		//CSS
 		link(rel="stylesheet", href="bower/normalize.css/normalize.css")
 		link(rel="stylesheet", href="fonts/stylesheet.css")
+		link(rel="stylesheet/less", href="css/simpleselect.less")
+		link(rel="stylesheet", href="bower/jScrollPane/style/jquery.jscrollpane.css")
 		link(rel="stylesheet", href="css/main.css")
+
 		//JS
-		script(type="application/javascript", src="bower/jquery/dist/jquery.js")
 		script(type="application/javascript", src="bower/modernizer/modernizr.js")
-		script(type="application/javascript", src="js/main.js")
-		script(type="application/javascript", src="js/tooltipPlagin.js")
 
 	body
 		include _wrap
 		include _footer
+		script(type="application/javascript", src="bower/jquery/dist/jquery.js")
+		script(type="application/javascript", src="js/tooltipPlagin.js")
+		script(src="bower/less/dist/less.min.js")
+		script(type="application/javascript", src="bower/simple-select/jquery.simpleselect.js")
+		script(type="application/javascript", src="bower/jScrollPane/script/jquery.jscrollpane.js")
+
+		script(type="application/javascript", src="js/main.js")

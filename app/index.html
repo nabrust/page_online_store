@@ -9,12 +9,11 @@
     <!--CSS-->
     <link rel="stylesheet" href="bower/normalize.css/normalize.css"/>
     <link rel="stylesheet" href="fonts/stylesheet.css"/>
+    <link rel="stylesheet/less" href="css/simpleselect.less"/>
+    <link rel="stylesheet" href="bower/jScrollPane/style/jquery.jscrollpane.css"/>
     <link rel="stylesheet" href="css/main.css"/>
     <!--JS-->
-    <script type="application/javascript" src="bower/jquery/dist/jquery.js"></script>
     <script type="application/javascript" src="bower/modernizer/modernizr.js"></script>
-    <script type="application/javascript" src="js/main.js"></script>
-    <script type="application/javascript" src="js/tooltipPlagin.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -39,9 +38,55 @@
                 <input type="tel" name="tel" placeholder="+7 (912) 000-00-00" id="telefonForCallback" class="callback-form__wrap__section__input"/>
               </section>
               <section class="callback-form__wrap__section">
-                <label for="date" class="callback-form__wrap__section__label">Дата звонка</label>
-                <input type="text" name="date" placeholder="" id="inputForDay" class="callback-form__wrap__section__input"/>
-                <input type="text" name="date" placeholder="" id="inputForMonth" class="callback-form__wrap__section__input"/>
+                <label for="date" class="callback-form__wrap__section__label">Дата звонка
+                  <select placeholder="01" class="callback-form_select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                  </select>
+                  <select placeholder="01" class="callback-form_select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </label>
               </section>
               <section class="callback-form__wrap__section">
                 <textarea name="comment" placeholder="Комментарий" class="callback-form__wrap__section__textarea"></textarea>
@@ -77,7 +122,28 @@
       </aside>
       <main class="contaner">
         <section class="section-by-container">
-          <div class="slaider"><img src="img/phone2.png" alt="Слайдер"/></div>
+          <div class="slider">
+            <div class="slide_wrap">
+              <ul class="slider-list">
+                <li class="slider-item active"><img src="img/mac.png" alt="Картинка слайдера"/>
+                  <div class="slider-commit"><a href="#" class="slider-commit__link">IMac за пол цены</a><span class="slider-commit__string">Приниси свой старый Мас и получи нановый!</span></div>
+                </li>
+                <li class="slider-item"><img src="img/phone.png" alt="Картинка слайдера"/>
+                  <div class="slider-commit"><a href="#" class="slider-commit__link">До 31 декабря, iPhone 4 за 9900 руб.</a><span class="slider-commit__string">Выйграй iPad Air за самый необычный  и интерены</span></div>
+                </li>
+                <li class="slider-item"><img src="img/phone2.png" alt="Картинка слайдера"/>
+                  <div class="slider-commit"><a href="#" class="slider-commit__link">Конкурс на концепт IPhone 7</a><span class="slider-commit__string">Выйграй iPad Air за самый необычный  и интереный дизайн нового iPhone 7.</span></div>
+                </li>
+              </ul>
+            </div>
+            <div class="slider-layer">
+              <div class="container__slider-layer">
+                <div class="slider__button-left slider-button">Пред.</div>
+                <div class="slider__button-right slider-button">След.</div>
+              </div>
+              <div class="picture-info"></div>
+            </div>
+          </div>
         </section>
         <section class="section-by-container">
           <header class="section-by-container__header">
@@ -373,5 +439,11 @@
         </section>
       </div>
     </footer>
+    <script type="application/javascript" src="bower/jquery/dist/jquery.js"></script>
+    <script type="application/javascript" src="js/tooltipPlagin.js"></script>
+    <script src="bower/less/dist/less.min.js"></script>
+    <script type="application/javascript" src="bower/simple-select/jquery.simpleselect.js"></script>
+    <script type="application/javascript" src="bower/jScrollPane/script/jquery.jscrollpane.js"></script>
+    <script type="application/javascript" src="js/main.js"></script>
   </body>
 </html>
