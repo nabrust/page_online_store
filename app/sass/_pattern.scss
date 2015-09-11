@@ -4,6 +4,7 @@ html,body {
   font-size: 14px;
   line-height: 1.429;
   @include clearfix;
+  min-width: 1000px;
 
 }
 .main-sidebar {

@@ -4,6 +4,7 @@ html, body {
   font-family: "elektra_light_proregular";
   font-size: 14px;
   line-height: 1.429;
+  min-width: 1000px;
 }
 /* line 3, ../sass/_clearfix.scss */
 html:before, html:after, body:before, body:after {
@@ -19,33 +20,33 @@ html, body {
   *zoom: 1;
 }
 
-/* line 9, ../sass/_pattern.scss */
+/* line 10, ../sass/_pattern.scss */
 .main-sidebar {
   width: 230px;
   float: left;
 }
 
-/* line 13, ../sass/_pattern.scss */
+/* line 14, ../sass/_pattern.scss */
 .main-sidebar__section {
   margin-bottom: 15px;
   color: #5c7b98;
 }
 
-/* line 17, ../sass/_pattern.scss */
+/* line 18, ../sass/_pattern.scss */
 .contaner {
   width: 740px;
   float: right;
   color: #5c7b98;
 }
 
-/* line 22, ../sass/_pattern.scss */
+/* line 23, ../sass/_pattern.scss */
 h2 {
   font-family: "elektra_light_probold";
   font-size: 25px;
   line-height: 0.8;
 }
 
-/* line 27, ../sass/_pattern.scss */
+/* line 28, ../sass/_pattern.scss */
 .wrapper {
   min-height: 100%;
   height: auto !important;
@@ -69,7 +70,7 @@ h2 {
   *zoom: 1;
 }
 
-/* line 37, ../sass/_pattern.scss */
+/* line 38, ../sass/_pattern.scss */
 .button-by-scroll {
   position: fixed;
   display: none;
@@ -78,7 +79,7 @@ h2 {
   bottom: 250px;
 }
 
-/* line 44, ../sass/_pattern.scss */
+/* line 45, ../sass/_pattern.scss */
 .string-up-button {
   display: block;
   position: absolute;
@@ -355,15 +356,19 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   float: left;
   margin-bottom: 25px;
   margin-left: 25px;
-  border: solid 2px #5c7b98;
+  border: solid 1px #dce2ec;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   cursor: pointer;
   vertical-align: bottom;
 }
+/* line 44, ../sass/_index.scss */
+.product-item:hover {
+  box-shadow: 0px 0px 5px 1px #dce2ec;
+}
 
-/* line 45, ../sass/_index.scss */
+/* line 48, ../sass/_index.scss */
 .product-list {
   margin-left: -25px;
   padding-left: 0px;
@@ -382,7 +387,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   *zoom: 1;
 }
 
-/* line 50, ../sass/_index.scss */
+/* line 53, ../sass/_index.scss */
 .product__characteristic-list {
   list-style-type: none;
   padding-left: 0px;
@@ -391,7 +396,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   width: 100%;
 }
 
-/* line 57, ../sass/_index.scss */
+/* line 60, ../sass/_index.scss */
 .product__header {
   position: relative;
   height: 100px;
@@ -411,14 +416,14 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   *zoom: 1;
 }
 
-/* line 64, ../sass/_index.scss */
+/* line 67, ../sass/_index.scss */
 .product-picture {
   float: left;
   position: absolute;
   bottom: 0px;
 }
 
-/* line 69, ../sass/_index.scss */
+/* line 72, ../sass/_index.scss */
 .product-link {
   font-size: 15px;
   color: #00b9fe;
@@ -429,7 +434,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   margin-top: 50px;
 }
 
-/* line 78, ../sass/_index.scss */
+/* line 81, ../sass/_index.scss */
 .characteristik-item__string {
   list-style-type: none;
   padding-left: 20px;
@@ -449,19 +454,19 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   *zoom: 1;
 }
 
-/* line 85, ../sass/_index.scss */
+/* line 88, ../sass/_index.scss */
 .characteristik-item__item {
   display: inline-block;
   max-width: 60%;
   overflow: hidden;
 }
 
-/* line 90, ../sass/_index.scss */
+/* line 93, ../sass/_index.scss */
 .index {
   float: left;
 }
 
-/* line 93, ../sass/_index.scss */
+/* line 96, ../sass/_index.scss */
 .value {
   float: right;
 }
